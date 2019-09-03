@@ -38,3 +38,36 @@ cd service-node
 thrift -gen js:node ../demo.thrift 
 ```
 > All the generated codes will be in folder `gen-{language}` renamed to `gen_py` for `gen-py` other wise it will throw error in python
+
+## Running Demo Application
+```
+git clone https://github.com/merajsiddiqui/thrift-demo.git
+```
+`open two diffrent terminals`
+
+>Terminal 1 (Python-Srever)
+```
+cd service-py
+virtualenv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python app.py
+```
+> Terminal 2 (Node Express API)
+```
+cd  service-node
+npm install
+node index.js
+```
+> Open Browser and visit `http://localhost:3000/{id}`
+
+`on Exception`
+```
+{"name":"InvalidUser","message":"User Id does not exist"}
+```
+`on sucess`
+```
+{"name":"Meraj Ahmad Siddiuqui","id":1,"active":true}
+```
+
+> If you have any issue running this app feel free to contact me at `merajsiddiqui@outlook.com`
