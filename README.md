@@ -18,3 +18,13 @@ If any error occurs solve the dependency problem and `sudo make install` again u
 ```
 thrift --version
 ```
+
+## Demo Project Description
+> I am assuming that you know what Apache Thrift is and why to use it. Here my focus is on how to do it.
+
+I am developing two micro services. One of micro-service will expose some functions or service to be used by another micro service. The two micro services can be in same or different language as well as on same or diffrent machine. For this demonstartion
+  - MicroService `1` in Python
+  - MicroService `2` in Node.JS
+
+### Thrift File
+Thrift is `IDL` (Interface Definition Language) which holds the definition of exposed functions and services and their respective data types. This file will be used to generate codes. Extension of file is `.thrift`
