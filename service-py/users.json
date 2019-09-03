@@ -1,0 +1,27 @@
+[
+    {
+        "id" : 1,
+        "name" : "Meraj Ahmad Siddiuqui",
+        "active" : true
+    },
+    {
+        "id" : 2,
+        "name" : "Steven childress",
+        "active" : true
+    },
+    {
+        "id" : 3,
+        "name" : "Sarthak Sawhney",
+        "active" : true
+    },
+    {
+        "id" : 4,
+        "name" : "Bibhaw Raj",
+        "active" : false
+    },
+    {
+        "id" : 5,
+        "name" : "Niharika Bist",
+        "active" : false
+    }
+]

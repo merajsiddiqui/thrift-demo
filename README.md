@@ -37,4 +37,4 @@ thrift -gen py ../demo.thrift
 cd service-node
 thrift -gen js:node ../demo.thrift 
 ```
-> All the generated codes will be in folder `gen-{language}`, For the sake of understanding haven't renamed them while there is option to remove those names
+> All the generated codes will be in folder `gen-{language}` renamed to `gen_py` for `gen-py` other wise it will throw error in python
