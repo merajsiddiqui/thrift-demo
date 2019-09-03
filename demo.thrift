@@ -1,6 +1,6 @@
 # Namespace are used to craete a folder in gen-py or gen-nodejs where auto generated code will be stored
 namespace py UserService
-namespace nodejs UserService
+namespace js UserService
 
 /**
 * typedef is used to define data type so instead of i32 i can use integer, while i32 is the data type supported in thrift
@@ -13,7 +13,7 @@ typedef i32 integer
 struct User {
     1: string name,
     2: integer id,
-    3: boolean active
+    3: bool active
 }
 
 /**

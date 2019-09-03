@@ -1,0 +1,15 @@
+{
+  "name": "service-node",
+  "version": "1.0.0",
+  "description": "This is a express api which will have a REST API but this will consume getUser from service-py",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Meraj Ahmad Siddiqui <merajsiddiqui@outlook.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "thrift": "^0.12.0"
+  }
+}

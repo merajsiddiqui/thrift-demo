@@ -23,8 +23,18 @@ thrift --version
 > I am assuming that you know what Apache Thrift is and why to use it. Here my focus is on how to do it.
 
 I am developing two micro services. One of micro-service will expose some functions or service to be used by another micro service. The two micro services can be in same or different language as well as on same or diffrent machine. For this demonstartion
-  - MicroService `1` in Python
-  - MicroService `2` in Node.JS
+  - MicroService `service-py` in Python 
+  - MicroService `service-node` in Node.JS
 
 ### Thrift File
 Thrift is `IDL` (Interface Definition Language) which holds the definition of exposed functions and services and their respective data types. This file will be used to generate codes. Extension of file is `.thrift`
+
+> For this project we have defined `demo.thrift`
+Compiling thrift IDL code and Generating codes in desired languages 
+```
+cd service-py
+thrift -gen py ../demo.thrift 
+cd service-node
+thrift -gen js:node ../demo.thrift 
+```
+> All the generated codes will be in folder `gen-{language}`, For the sake of understanding haven't renamed them while there is option to remove those names
